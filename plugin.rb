@@ -8,7 +8,6 @@ enabled_site_setting :discourse_post_event_enabled
 
 # --- CSS Assets ---
 register_asset "stylesheets/common/discourse-post-event.scss"
-register_asset "stylesheets/common/discourse-post-event-builder.scss"
 register_asset "stylesheets/common/discourse-post-event-invitees.scss"
 register_asset "stylesheets/common/discourse-post-event-upcoming-events.scss"
 register_asset "stylesheets/common/discourse-post-event-core-ext.scss"
