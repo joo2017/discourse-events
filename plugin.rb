@@ -8,12 +8,18 @@ enabled_site_setting :discourse_post_event_enabled
 
 # --- CSS Assets ---
 register_asset "stylesheets/common/discourse-post-event.scss"
-register_asset "stylesheets/common/discourse-post-event-invitees.scss"
-register_asset "stylesheets/common/discourse-post-event-upcoming-events.scss"
-register_asset "stylesheets/common/discourse-post-event-core-ext.scss"
+register_asset "stylesheets/common/post-event-builder.scss"
 register_asset "stylesheets/common/discourse-post-event-bulk-invite-modal.scss"
+register_asset "stylesheets/common/discourse-post-event-core-ext.scss"
+register_asset "stylesheets/common/discourse-post-event-invitees.scss"
+register_asset "stylesheets/common/discourse-post-event-preview.scss"
+register_asset "stylesheets/common/discourse-post-event-upcoming-events.scss"
+register_asset "stylesheets/common/upcoming-events-calendar.scss"
+register_asset "stylesheets/common/upcoming-events-list.scss"
+register_asset "stylesheets/desktop/discourse-post-event-invitees.scss", :desktop
 register_asset "stylesheets/mobile/discourse-post-event.scss", :mobile
 register_asset "stylesheets/mobile/discourse-post-event-core-ext.scss", :mobile
+register_asset "stylesheets/mobile/discourse-post-event-invitees.scss", :mobile
 
 # --- SVG Icons ---
 register_svg_icon "calendar-day"
