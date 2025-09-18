@@ -1,0 +1,11 @@
+en:
+  site_settings:
+    discourse_post_event_enabled: "Enable the Discourse Post Event plugin."
+  discourse_post_event:
+    errors:
+      models:
+        event:
+          only_one_event: "A post can only have one event."
+          must_be_in_first_post: "An event can only be in the first post of a topic."
+          ends_at_before_starts_at: "The event's end date cannot be before the start date."
+          start_must_be_present_and_a_valid_date: "The event requires a valid start date."
