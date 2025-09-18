@@ -13,9 +13,15 @@ module ::DiscoursePostEvent
   PLUGIN_NAME = "discourse-post-event"
   TOPIC_POST_EVENT_STARTS_AT = "TopicEventStartsAt"
   TOPIC_POST_EVENT_ENDS_AT = "TopicEventEndsAt"
+
+  class Engine < ::Rails::Engine
+    engine_name PLUGIN_NAME
+    isolate_namespace DiscoursePostEvent
+  end
 end
 
 after_initialize do
+  # --- Backend ---
   require_relative "app/controllers/discourse_post_event/events_controller"
   require_relative "app/controllers/discourse_post_event/invitees_controller"
   require_relative "app/controllers/discourse_post_event/upcoming_events_controller"
@@ -31,7 +37,7 @@ after_initialize do
 
   # Mount the plugin's engine
   Discourse::Application.routes.append do
-    mount ::DiscoursePostEvent::Engine, at: "/"
+    mount ::DiscoursePostEvent::Engine, at: "/discourse-post-event"
   end
 
   # Add a custom validator to the Post model
