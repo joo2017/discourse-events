@@ -1,4 +1,27 @@
 plugins:
   discourse_post_event_enabled:
     default: true
-    client: true```
+    client: true
+  discourse_post_event_allowed_on_groups:
+    client: true
+    type: group_list
+    default: ""
+  displayed_invitees_limit:
+    default: 10
+    client: false
+    max: 25
+  display_post_event_date_on_topic_title:
+    default: true
+    client: true
+  discourse_post_event_allowed_custom_fields:
+    type: list
+    list_type: simple
+    client: true
+    default: ""
+  event_participation_buttons:
+    default: "going|interested|not going"
+    client: true
+    type: list
+  sidebar_show_upcoming_events:
+    default: true
+    client: true
