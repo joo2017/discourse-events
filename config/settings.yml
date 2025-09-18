@@ -2,18 +2,3 @@ plugins:
   discourse_post_event_enabled:
     default: true
     client: true```
-
-#### `config/locales/client.en.yml`
-
-```yaml
-en:
-  js:
-    discourse_post_event:
-      builder_modal:
-        attach: "Create Event"
-        create_event_title: "Create Event"
-        update_event_title: "Edit Event"
-        name:
-          label: "Event Name"
-        create: "Create"
-        update: "Save"
