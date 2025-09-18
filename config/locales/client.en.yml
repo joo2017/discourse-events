@@ -1,0 +1,22 @@
+en:
+  js:
+    discourse_post_event:
+      builder_modal:
+        attach: "Create Event"
+        create_event_title: "Create Event"
+        update_event_title: "Edit Event"
+        name:
+          label: "Event Name"
+          placeholder: "Optional, defaults to topic title"
+        status:
+          label: "Status"
+        reminders:
+          label: "Reminders"
+        create: "Create"
+        update: "Save"
+      models:
+        invitee:
+          status:
+            going: "Going"
+            interested: "Interested"
+            not_going: "Not Going"
