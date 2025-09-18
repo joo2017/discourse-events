@@ -7,6 +7,8 @@ DiscoursePostEvent::Engine.routes.draw do
   get "/events/:id" => "events#show"
   delete "/events/:id" => "events#destroy"
   post "/events/:id/invite" => "events#invite"
+  post "/events/:id/csv-bulk-invite" => "events#csv_bulk_invite"
+  post "/events/:id/bulk-invite" => "events#bulk_invite"
 
   get "/events/:post_id/invitees" => "invitees#index"
   post "/events/:event_id/invitees" => "invitees#create"
@@ -14,4 +16,5 @@ DiscoursePostEvent::Engine.routes.draw do
   delete "/events/:post_id/invitees/:id" => "invitees#destroy"
 
   get "/upcoming-events" => "upcoming_events#index"
+  get "/upcoming-events/mine" => "upcoming_events#index"
 end
